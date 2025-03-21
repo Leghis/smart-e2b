@@ -1,6 +1,6 @@
 {
   "name": "smart-e2b",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A smart MCP server that integrates E2B for code execution in the cloud",
   "main": "build/index.js",
   "type": "module",
