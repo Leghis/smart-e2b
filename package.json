@@ -1,0 +1,43 @@
+{
+  "name": "smart-e2b",
+  "version": "0.1.0",
+  "description": "A smart MCP server that integrates E2B for code execution in the cloud",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "smart-e2b": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"if(process.platform !== 'win32') { try { require('child_process').execSync('chmod +x ./build/index.js'); } catch(e) { console.log('Could not chmod +x, but continuing'); } }\"",
+    "dev": "node dev.js",
+    "watch": "tsc --watch",
+    "start": "node build/index.js",
+    "install-claude": "node bin/cli.js --install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "postinstall": "node -e \"if(process.platform !== 'win32') { try { require('fs').accessSync('./build/index.js') && require('child_process').execSync('chmod +x ./build/index.js'); } catch(e) { console.log('Skip chmod, file not found or error occurred'); } }\""
+  },
+  "keywords": [
+    "mcp",
+    "e2b",
+    "code-interpreter",
+    "ai",
+    "claude",
+    "sandbox"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@e2b/code-interpreter": "^1.0.4",
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

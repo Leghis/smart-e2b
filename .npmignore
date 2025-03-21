@@ -1,0 +1,38 @@
+# Source
+src/
+
+# Git
+.git/
+.github/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Tests
+tests/
+test/
+__tests__/
+*.test.ts
+*.spec.ts
+coverage/
+
+# CI/CD
+.travis.yml
+.github/workflows
+.gitlab-ci.yml
+
+# Misc
+.DS_Store
+tsconfig.json
+.eslintrc
+.eslintignore
+.editorconfig
+yarn.lock
+pnpm-lock.yaml
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
