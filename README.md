@@ -23,7 +23,7 @@ Un serveur MCP (Model Context Protocol) qui intègre E2B pour exécuter du code 
 npm install -g smart-e2b
 
 # OU installation directe depuis GitHub
-npm install -g git+https://github.com/votre-compte/smart-e2b.git
+npm install -g git+https://github.com/Leghis/smart-e2b.git
 ```
 
 ## Configuration avec Claude AI Desktop
@@ -106,7 +106,7 @@ Pour contribuer ou modifier le projet :
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/votre-compte/smart-e2b.git
+git clone https://github.com/Leghis/smart-e2b.git
 cd smart-e2b
 
 # Installer les dépendances
