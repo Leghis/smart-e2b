@@ -36,9 +36,10 @@ npm install -g git+https://github.com/Leghis/smart-e2b.git
 {
   "mcpServers": {
     "smart-e2b": {
-      "command": "smart-e2b",
+      "command": "npx",
+      "args": ["-y", "smart-e2b"],
       "env": {
-        "E2B_API_KEY": "votre_clé_api_e2b"
+        "E2B_API_KEY": ""
       }
     }
   }
