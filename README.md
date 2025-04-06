@@ -1,4 +1,5 @@
 # SMART-E2B
+[![smithery badge](https://smithery.ai/badge/@Leghis/smart-e2b)](https://smithery.ai/server/@Leghis/smart-e2b)
 
 Un serveur MCP (Model Context Protocol) qui intègre E2B pour exécuter du code dans des environnements sandbox sécurisés dans le cloud, spécialement conçu pour fonctionner avec Claude AI Desktop.
 
@@ -18,6 +19,15 @@ Un serveur MCP (Model Context Protocol) qui intègre E2B pour exécuter du code 
 
 ## Installation
 
+### Installing via Smithery
+
+To install smart-e2b for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Leghis/smart-e2b):
+
+```bash
+npx -y @smithery/cli install @Leghis/smart-e2b --client claude
+```
+
+### Installing Manually
 ```bash
 # Installation globale depuis NPM
 npm install -g smart-e2b
